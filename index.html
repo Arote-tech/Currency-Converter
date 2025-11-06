@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content = "width=device-width, initial-scale= 1.0">
+        <title>Currency Converter</title>
+    <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Currency Converter</h1>   
+
+            <form id = "converter-form">
+                <div class = "form-group">
+                    <label for = "amount">Amount</label>
+                    <input type = "number" id = "amount" placeholder = "Enter amount" required>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "from-currency">From</label>
+                    <select id = "from-currency">
+                        <!-- currency options will be inserted from the api -->
+                    </select>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "to-currency">To</label>
+                    <select id = "to-currency">
+                        <!-- currency options will be inserted from the api -->
+                    </select>
+                </div>
+
+                <button type = "submit">Convert</button>
+
+            </form>
+
+            <div id = "result">
+                <p></p>
+                <!-- results will be inserted from the api -->
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+
+    </body>
+</html>
