@@ -14,6 +14,7 @@ async function fetchCurrencies () {
       // fetch("https://api.exchangerate-api.com/v4/latest/USD")
    const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
    const data = await response.json();
+   
    const currencyOptions = Object.keys(data.rates);
 
    currencyOptions.forEach(currency => {
